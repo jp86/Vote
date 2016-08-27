@@ -29,6 +29,7 @@ public class UserHandler {
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(User user, ModelMap map) {
 		System.out.println("user login..." + user);
+		System.out.println("我测试一下");
 		user = userService.login(user);
 		//登录结果的页面跳转
 		if(user == null){
